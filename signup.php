@@ -8,7 +8,7 @@
     }
 
     //initialize variables
-    require_once "config.php";
+    require_once "db.php";
     $username_error = "";
     $password_error = "";
     $username_validity_class = "";

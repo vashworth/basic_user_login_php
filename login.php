@@ -38,7 +38,7 @@
 
         //If there are no errors in the form, continue
         if(empty($username_error) && empty($password_error)){
-            require_once "config.php";
+            require_once "db.php";
 
             //Prepare sql statement
             $sql = "SELECT username, password FROM users WHERE username = ?";
