@@ -1,0 +1,10 @@
+#Change default directory page
+<IfModule dir_module>
+    DirectoryIndex login.php
+</IfModule>
+
+#remove php file extension
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
